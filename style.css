@@ -1,5 +1,63 @@
+/*Good Colors:
+E0FBFC
+C2DFE3
+9DB4C0
+5C6B73
+253237
+ */
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    background-color: #E0FBFC;
+    font-family: 'Roboto', 'Montserrat', 'Lato';
+}
+/* Styling for the header */
+header {
+    background-color: #9DB4C0; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+}
+
+header h1 {
+    padding: 20px;
+    color: #E0FBFC;
+}
+
+header nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+header nav ul li{
+    padding: 20px;
+}
+
+header nav ul li a{
+    padding: 20px;
+    text-decoration: none;
+}
+
+header nav ul li a:link{
+    color: #E0FBFC;
+}
+
+header nav ul li a:visited{
+    color: #E0FBFC;
+}
+
+header nav ul li a:hover{
+    color: #253237;
+    text-decoration: underline;
+}
+
+header nav ul li a:active{
+    color: #253237;
+    text-decoration: underline;
 }
