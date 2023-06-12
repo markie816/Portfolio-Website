@@ -61,3 +61,25 @@ header nav ul li a:active{
     color: #253237;
     text-decoration: underline;
 }
+
+/* Making a grid of the main content */
+main {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+}
+
+#contact {
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: #E0FBFC;
+}
+
+#featured_projects {
+    grid-area: 2 / 1 / 3 / 2;
+    background-color: #9DB4C0;
+    color: #E0FBFC;
+}
+
+#me {
+    grid-area: 1 / 2 / 3 / 3;
+    background-color: #E0FBFC;
+}
