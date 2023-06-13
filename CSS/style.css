@@ -66,11 +66,13 @@ header nav ul li a:active{
 main {
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr;
+    min-height: 500px;
 }
 
 #contact {
     grid-area: 1 / 1 / 2 / 2;
     background-color: #E0FBFC;
+    text-align: center;
 }
 
 #featured_projects {
@@ -82,4 +84,10 @@ main {
 #me {
     grid-area: 1 / 2 / 3 / 3;
     background-color: #E0FBFC;
+}
+
+/* styling contact section */
+#contact_pictogrammen {
+    display: flex;
+    justify-content: space-around;
 }
