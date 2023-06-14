@@ -66,7 +66,6 @@ header nav ul li a:active{
 main {
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr;
-    min-height: 500px;
 }
 
 #contact {
@@ -90,4 +89,8 @@ main {
 #contact_pictogrammen {
     display: flex;
     justify-content: space-around;
+}
+
+#contact_pictogrammen img {
+    height: 100px;
 }
