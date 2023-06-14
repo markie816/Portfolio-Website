@@ -6,15 +6,20 @@ C2DFE3
 253237
  */
 
-* {
+ * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     background-color: #E0FBFC;
     font-family: 'Roboto', 'Montserrat', 'Lato';
+    height: 100%;
 }
 /* Styling for the header */
 header {
@@ -23,6 +28,7 @@ header {
     justify-content: space-between;
     align-items: center;
     font-size: 16px;
+    height: 10%;
 }
 
 header h1 {
@@ -64,6 +70,7 @@ header nav ul li a:active{
 
 /* Making a grid of the main content */
 main {
+    height: 70%;
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr;
 }
@@ -93,4 +100,14 @@ main {
 
 #contact_pictogrammen img {
     height: 100px;
+}
+
+/* languages */
+#languages {
+    height: 10%;
+}
+
+/*Footer*/
+footer {
+    height: 10%;
 }
