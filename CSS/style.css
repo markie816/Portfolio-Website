@@ -96,10 +96,15 @@ main {
 #contact_pictogrammen {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 #contact_pictogrammen img {
-    height: 100px;
+    height: 50px;
+}
+
+#map {
+    height: 180px;
 }
 
 /* languages */
