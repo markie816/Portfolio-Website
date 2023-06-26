@@ -28,7 +28,7 @@ header {
     justify-content: space-between;
     align-items: center;
     font-size: 16px;
-    height: 10%;
+    height: 5%;
 }
 
 header h1 {
@@ -70,7 +70,7 @@ header nav ul li a:active{
 
 /* Making a grid of the main content */
 main {
-    height: 70%;
+    height: 85%;
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr;
 }
@@ -79,6 +79,8 @@ main {
     grid-area: 1 / 1 / 2 / 2;
     background-color: #E0FBFC;
     text-align: center;
+    display: grid;
+    grid-template: 1fr 3fr 4fr / 1fr;
 }
 
 #featured_projects {
@@ -93,26 +95,61 @@ main {
 }
 
 /* styling contact section */
+#contact h2 {
+    grid-row: 1 / 2;
+}
+
 #contact_pictogrammen {
+    grid-row: 2 / 3;
+    align-self: center;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
+#contact a{
+    padding: 20px;
+    text-decoration: none;
+}
+
+#contact a:link{
+    color: #5C6B73;
+}
+
+#contact a:visited{
+    color: #5C6B73;
+}
+
+#contact a:hover{
+    color: #253237;
+    text-decoration: underline;
+}
+
+#contact a:active{
+    color: #253237;
+    text-decoration: underline;
+}
+
 #contact_pictogrammen img {
-    height: 50px;
+    max-height: 50px;
+}
+
+#location {
+    grid-row: 3 / 4;
 }
 
 #map {
-    height: 180px;
+    min-height: 150px;
+    position: relative;
+    bottom: 0px;
 }
 
 /* languages */
 #languages {
-    height: 10%;
+    height: 5%;
 }
 
 /*Footer*/
 footer {
-    height: 10%;
+    height: 5%;
 }

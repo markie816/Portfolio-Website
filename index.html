@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
     <link rel="stylesheet" type="text/css" href="./CSS/style.css">
-    <script src="script.js" async></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
@@ -14,6 +13,7 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
     crossorigin=""></script> <!-- De Javascript link naar Leaflet voor de koppeling met de kaart-->
+    <script src="script.js" async></script>
 </head>
 <body>
     <header>
@@ -28,22 +28,26 @@
     <main>
         <section id="contact">
             <h2>Get in touch</h2>
-            <p>Get in touch with me to get the ball rolling</p>
             <div id="contact_pictogrammen">
                 <div>
                     <img src="./CSS/Images/Email Pictogram.svg" alt="">
-                    <p><a href="mailto:markrennenberg@hotmail.com">markrennenberg@hotmail.com</a></p>
+                    <p><a href="mailto:markrennenberg@hotmail.com">markrenneberg@hotmail.com</a></p>
                 </div>
                 <div>
                     <img src="./CSS/Images/Phone Pictogram.svg" alt="">
-                    <p><a href="tel:+31640321049">+31640321049</a></p>
+                    <p><a href="tel:+31640321049">+31640321048</a></p>
                 </div>
                 <div>
                     <img src="./CSS/Images/LinkedIn Pictogram.svg" alt="">
                     <p><a href="https://www.linkedin.com/in/mark-rennenberg-2a589614b/">LinkedIn</a></p>
                 </div>
             </div>
-            <div id="map"></div>
+            <div id="location">
+                <p>------</p>
+                <p>Find Me</p>
+                <div id="map">
+                </div>
+            </div>
         </section>
         <section id="featured_projects">
             <h2>Featured Projects</h2>
