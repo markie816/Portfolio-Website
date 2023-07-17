@@ -19,7 +19,8 @@ html {
 body {
     background-color: #E0FBFC;
     font-family: 'Roboto', 'Montserrat', 'Lato';
-    height: 100%;
+    height: 100vh;
+    width: 100vw;
 }
 /* Styling for the header */
 header {
@@ -28,7 +29,7 @@ header {
     justify-content: space-between;
     align-items: center;
     font-size: 16px;
-    height: 5%;
+    height: 5vh;
 }
 
 header h1 {
@@ -70,7 +71,7 @@ header nav ul li a:active{
 
 /* Making a grid of the main content */
 main {
-    height: 85%;
+    height: 85vh;
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr;
 }
@@ -79,8 +80,6 @@ main {
     grid-area: 1 / 1 / 2 / 2;
     background-color: #E0FBFC;
     text-align: center;
-    display: grid;
-    grid-template: 1fr 3fr 4fr / 1fr;
 }
 
 #featured_projects {
@@ -91,16 +90,23 @@ main {
 
 #me {
     grid-area: 1 / 2 / 3 / 3;
-    background-color: #E0FBFC;
+    background-image: url(./Images/me.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(255,255,255,0.6);
+    background-blend-mode: lighten;
+    position: relative;
 }
 
 /* styling contact section */
-#contact h2 {
-    grid-row: 1 / 2;
+#contact_container{
+    display: grid;
+    grid-template: 3fr 4fr / 1fr;
 }
 
 #contact_pictogrammen {
-    grid-row: 2 / 3;
+    grid-row: 1 / 2;
     align-self: center;
     display: flex;
     justify-content: space-around;
@@ -135,7 +141,16 @@ main {
 }
 
 #location {
-    grid-row: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+#location hr{
+    display: block;
+    margin: 0.5em auto;
+    border-style: inset;
+    border-width: 1px;
+    width: 40px;
+    border-color: #253237;
 }
 
 #map {
@@ -144,12 +159,31 @@ main {
     bottom: 0px;
 }
 
+/* Featured Projects */
+#featured_projects_containers{
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+}
+
+.featured_project{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.featured_project img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
 /* languages */
 #languages {
-    height: 5%;
+    height: 5vh;
 }
 
 /*Footer*/
 footer {
-    height: 5%;
+    height: 5vh;
 }
