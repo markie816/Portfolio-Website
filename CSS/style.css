@@ -1,9 +1,9 @@
 /*Good Colors:
-E0FBFC
-C2DFE3
-9DB4C0
-5C6B73
-253237
+#E0FBFC
+#C2DFE3
+#9DB4C0
+#5C6B73
+#253237
  */
 
  * {
@@ -176,6 +176,43 @@ main {
     height: 100%;
     object-fit: cover;
     display: block;
+}
+
+/* Me */
+.balloon {
+    background-color: #E0FBFCCC;
+    color: #253237;
+    border: 3px solid #5C6B73CC;
+    border-radius: 80%;
+    width: 150px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#personal {
+    position: absolute;
+    top: 8%;
+    left: 15%;
+}
+
+#hobbies {
+    position: absolute;
+    right: 10%;
+    top: 28%;
+}
+
+#characteristics{
+    position: absolute;
+    left: 15%;
+    top: 48%;
+}
+
+#skills{
+    position: absolute;
+    right: 10%;
+    top: 68%;
 }
 
 /* languages */
