@@ -19,10 +19,17 @@ html {
 body {
     background-color: #E0FBFC;
     font-family: 'Roboto', 'Montserrat', 'Lato';
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
 }
-/* Styling for the header */
+
+main {
+    height: 85vh;
+    display: grid;
+    grid-template: 50% 50% / 50% 50%;
+}
+
+/* ------------ Styling for the header ------------ */
 header {
     background-color: #9DB4C0; 
     display: flex;
@@ -69,44 +76,25 @@ header nav ul li a:active{
     text-decoration: underline;
 }
 
-/* Making a grid of the main content */
-main {
-    height: 85vh;
-    display: grid;
-    grid-template: 1fr 1fr / 1fr 1fr;
-}
-
+/* ------------ styling contact section ------------ */
 #contact {
     grid-area: 1 / 1 / 2 / 2;
     background-color: #E0FBFC;
     text-align: center;
+    overflow: hidden;
 }
 
-#featured_projects {
-    grid-area: 2 / 1 / 3 / 2;
-    background-color: #9DB4C0;
-    color: #E0FBFC;
-}
-
-#me {
-    grid-area: 1 / 2 / 3 / 3;
-    background-image: url(./Images/me.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-color: rgba(255,255,255,0.6);
-    background-blend-mode: lighten;
-    position: relative;
-}
-
-/* styling contact section */
 #contact_container{
     display: grid;
-    grid-template: 3fr 4fr / 1fr;
+    grid-template: 1fr 3fr 4fr / 1fr;
+}
+
+#contact h2{
+    grid-row: 1 / 2;
 }
 
 #contact_pictogrammen {
-    grid-row: 1 / 2;
+    grid-row: 2 / 3;
     align-self: center;
     display: flex;
     justify-content: space-around;
@@ -141,7 +129,7 @@ main {
 }
 
 #location {
-    grid-row: 2 / 3;
+    grid-row: 3 / 4;
 }
 
 #location hr{
@@ -159,26 +147,45 @@ main {
     bottom: 0px;
 }
 
-/* Featured Projects */
+/* ------------ Featured Projects ------------ */
+#featured_projects {
+    grid-area: 2 / 1 / 3 / 2;
+    background-color: #9DB4C0;
+    color: #E0FBFC;
+    overflow: hidden;
+}
+
 #featured_projects_containers{
     display: grid;
-    grid-template: 1fr 1fr / 1fr 1fr;
+    grid-template: 50% 50% / 50% 50%;
 }
 
 .featured_project{
     width: 100%;
-    height: 200px;
-    overflow: hidden;
+    max-height: 100%;
 }
 
 .featured_project img{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    max-height: 100%;
+    object-fit: contain;
     display: block;
+    overflow: hidden;
 }
 
-/* Me */
+/* ------------ Me ------------ */
+#me {
+    grid-area: 1 / 2 / 3 / 3;
+    max-height: 85vh;
+    background-image: url(./Images/me.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(255,255,255,0.6);
+    background-blend-mode: lighten;
+    position: relative;
+}
+
 .balloon {
     background-color: #E0FBFCCC;
     color: #253237;
@@ -215,12 +222,23 @@ main {
     top: 68%;
 }
 
-/* languages */
+/* ------------ languages ------------ */
 #languages {
     height: 5vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-/*Footer*/
+#languages img{
+    max-height: 100%;
+    object-fit: cover;
+}
+
+/* ------------ Footer ------------ */
 footer {
     height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
