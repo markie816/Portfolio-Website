@@ -18,11 +18,26 @@
 <body>
     <header>
         <h1>My Portfolio</h1>
-        <nav>
+        <!-- Header large screens-->
+        <nav class="header_large">
             <ul>
                 <li><a href="index.html">Main</a></li>
                 <li><a href="projects.html">All Projects</a></li>
             </ul>
+        </nav>
+        <!-- Header small screens-->
+        <nav class="header_small">
+            <div class="dropdown">
+                <div class="menu_container" onclick="openDropdown()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="index.html">Main</a>
+                    <a href="projects.html">All Projects</a>
+                </div>
+            </div>
         </nav>
     </header>
     <main>

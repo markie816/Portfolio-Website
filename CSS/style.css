@@ -29,7 +29,13 @@ main {
     grid-template: 50% 50% / 50% 50%;
 }
 
-/* ------------ Styling for the header ------------ */
+/* ------------ Styling for the header Large ------------ */
+@media only screen and (min-width: 480px) {
+    .header_small{
+        display: none;
+    }
+}
+
 header {
     background-color: #9DB4C0; 
     display: flex;
@@ -40,7 +46,7 @@ header {
 }
 
 header h1 {
-    padding: 20px;
+    padding-left: 20px;
     color: #E0FBFC;
 }
 
@@ -49,13 +55,9 @@ header nav ul{
     list-style-type: none;
 }
 
-header nav ul li{
-    padding: 20px;
-}
-
 header nav ul li a{
-    padding: 20px;
     text-decoration: none;
+    padding-right: 40px;
 }
 
 header nav ul li a:link{
@@ -74,6 +76,63 @@ header nav ul li a:hover{
 header nav ul li a:active{
     color: #253237;
     text-decoration: underline;
+}
+
+/* ------------ Styling for the header Small ------------ */
+@media only screen and (max-width: 480px) {
+    .header_large{
+        display: none;
+    }
+
+    .menu_container{
+        display: inline-block;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+    .bar{
+        width: 35px;
+        height: 5px;
+        background: #E0FBFC;
+        margin: 6px 0;
+    }
+
+    .menu_container:hover .bar {
+        background-color: #253237;
+    }
+
+    .dropdown{
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        background-color: #9DB4C0;
+        min-width: 160px;
+        overflow: auto;
+        right: 0;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: #253237;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover{
+        background-color: #C2DFE3;
+    }
+
+    .show {
+        display: block;
+    }
+
+/* https://www.w3schools.com/howto/howto_js_dropdown.asp */
 }
 
 /* ------------ styling contact section ------------ */
